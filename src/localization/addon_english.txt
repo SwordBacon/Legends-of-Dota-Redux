@@ -940,7 +940,7 @@
 
 
     "DOTA_Tooltip_Ability_cherub_synthesis"        "Synthesis"  
-    "DOTA_Tooltip_Ability_cherub_synthesis_Description"    "While Toggled, converts Cherub's mana into health or health into mana, depending on the day/night cycle. During the day cycle, converts her health into mana. During the night cycle, converts her man into health."  
+    "DOTA_Tooltip_Ability_cherub_synthesis_Description"    "While Toggled, converts Cherub's mana into health or health into mana, depending on the day/night cycle. During the day, converts her health into mana. During the night, converts her mana into health."  
     "DOTA_Tooltip_Ability_cherub_synthesis_Base_conversion_rate"  "BASE CONVERSION RATE:"  
     "DOTA_Tooltip_Ability_cherub_synthesis_mana_to_health"    "%MANA TO HEALTH (night):"  
     "DOTA_Tooltip_Ability_cherub_synthesis_health_to_mana"    "%HEALTH TO MANA (day):"
@@ -1071,4 +1071,5 @@
     "blue_flower"          "Blue Blossom"
     "yellow_flower"          "Yellow Daisy"
     "purple_flower"          "Purple Lotus"
+
 }
