@@ -91,6 +91,7 @@ function PlantWhite( keys )
     if ownerAbility then
         local whiteFlower = CreateUnitByName( "white_flower", casterLocation, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(owner, whiteFlower, "modifier_white_flower", {})
+        whiteFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
         --whiteFlower:SetBaseMaxHealth(flowerHealth)
         --whiteFlower:SetBaseDamageMax(flowerDamage + 5)
         --whiteFlower:SetBaseDamageMin(flowerDamage - 5)
@@ -119,6 +120,7 @@ function PlantWhiteBase( keys )
     if ownerAbility then
         local whiteFlower = CreateUnitByName( "white_flower", point, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(owner, whiteFlower, "modifier_white_flower", {})
+        whiteFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
 
         owner.whiteFlowerCount = owner.whiteFlowerCount + 1
         table.insert(owner.whiteFlowerTable, whiteFlower)
@@ -156,6 +158,7 @@ function PlantRed( keys )
     if ownerAbility then
         local redFlower = CreateUnitByName( "red_flower", casterLocation, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(owner, redFlower, "modifier_red_flower", {})
+        redFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
         --redFlower:SetBaseMaxHealth(flowerHealth)
         --redFlower:SetBaseDamageMax(flowerDamage + 10)
         --redFlower:SetBaseDamageMin(flowerDamage - 10)
@@ -186,6 +189,7 @@ function PlantRedBase( keys )
     if ownerAbility then
         local redFlower = CreateUnitByName( "red_flower", point, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(owner, redFlower, "modifier_red_flower", {})
+        redFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
 
         owner.redFlowerCount = owner.redFlowerCount + 1
         table.insert(owner.redFlowerTable, redFlower)
@@ -222,6 +226,7 @@ function PlantPink( keys )
     if ownerAbility then
         local pinkFlower = CreateUnitByName( "pink_flower", casterLocation, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(pinkFlower, pinkFlower, "modifier_pink_flower", {})
+        pinkFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
         --pinkFlower:SetBaseMaxHealth(flowerHealth)
 
         owner.pinkFlowerCount = owner.pinkFlowerCount + 1
@@ -249,6 +254,7 @@ function PlantPinkBase( keys )
     if ownerAbility then
         local pinkFlower = CreateUnitByName( "pink_flower", point, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(pinkFlower, pinkFlower, "modifier_pink_flower", {})
+        pinkFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
 
         owner.pinkFlowerCount = owner.pinkFlowerCount + 1
         table.insert(owner.pinkFlowerTable, pinkFlower)
@@ -331,6 +337,7 @@ function PlantBlue( keys )
     if ownerAbility then
         local blueFlower = CreateUnitByName( "blue_flower", casterLocation, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(blueFlower, blueFlower, "modifier_blue_flower", {})
+        blueFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
         --blueFlower:SetBaseMaxHealth(flowerHealth)
 
         owner.blueFlowerCount = owner.blueFlowerCount + 1
@@ -358,6 +365,7 @@ function PlantBlueBase( keys )
     if ownerAbility then
         local blueFlower = CreateUnitByName( "blue_flower", point, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(blueFlower, blueFlower, "modifier_blue_flower", {})
+        blueFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
 
         owner.blueFlowerCount = owner.blueFlowerCount + 1
         table.insert(owner.blueFlowerTable, blueFlower)
@@ -407,6 +415,7 @@ function PlantYellow( keys )
     if ownerAbility then
         local yellowFlower = CreateUnitByName( "yellow_flower", casterLocation, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(yellowFlower, yellowFlower, "modifier_yellow_flower", {})
+        yellowFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
         --yellow_flower:SetBaseMaxHealth(flowerHealth)
 
         owner.yellowFlowerCount = owner.yellowFlowerCount + 1
@@ -434,6 +443,7 @@ function PlantYellowBase( keys )
     if ownerAbility then
         local yellowFlower = CreateUnitByName( "yellow_flower", point, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(yellowFlower, yellowFlower, "modifier_yellow_flower", {})
+        yellowFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
 
         owner.yellowFlowerCount = owner.yellowFlowerCount + 1
         table.insert(owner.yellowFlowerTable, yellowFlower)
@@ -470,6 +480,7 @@ function PlantPurple( keys )
     if ownerAbility then
         local purpleFlower = CreateUnitByName( "purple_flower", casterLocation, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(purpleFlower, purpleFlower, "modifier_purple_flower", {})
+        purpleFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
         --purple_flower:SetBaseMaxHealth(flowerHealth)
 
         owner.purpleFlowerCount = owner.purpleFlowerCount + 1
@@ -497,6 +508,7 @@ function PlantPurpleBase( keys )
     if ownerAbility then
         local purpleFlower = CreateUnitByName( "purple_flower", point, false, owner, owner, owner:GetTeamNumber() )
         ownerAbility:ApplyDataDrivenModifier(purpleFlower, purpleFlower, "modifier_purple_flower", {})
+        purpleFlower:AddNewModifier(owner, nil, "modifier_phased", {Duration = 0.03})
 
         owner.purpleFlowerCount = owner.purpleFlowerCount + 1
         table.insert(owner.purpleFlowerTable, purpleFlower)
