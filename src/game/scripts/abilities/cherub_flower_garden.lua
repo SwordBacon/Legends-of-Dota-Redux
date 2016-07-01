@@ -25,7 +25,7 @@ end
 
 function PlantSetHealth( keys )
     local caster = keys.caster
-    local owner = caster:GetOwner()
+    local owner = caster:GetPlayerOwner():GetAssignedHero()
     local target = keys.target
     local ability = keys.ability
     local abilityLevel = ability:GetLevel()
@@ -42,8 +42,8 @@ function PlantSetHealth( keys )
         target:SetBaseDamageMin(redDamage - 10)
         target:SetBaseDamageMax(redDamage + 10)
     end
-    if caster:HasScepter() then
-        ability:ApplyDataDrivenModifier(caster, target, "modifier_aghs_thorns", {})
+    if owner:HasScepter() then
+        ability:ApplyDataDrivenModifier(owner, target, "modifier_aghs_thorns", {})
     end
 end
 
