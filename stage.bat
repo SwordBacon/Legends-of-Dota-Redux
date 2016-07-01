@@ -50,8 +50,8 @@ mklink /D /J "dota\game\particles" "src\game\particles"
 mklink /D /J "dota\content\particles" "src\content\particles"
 
 :: Link resource folders
-mklink /D /J "dota\game\resource\flash3" "src\resource\flash3"
-mklink /D /J "dota\game\resource\overviews" "src\resource\overviews"
+mklink /D /J "dota\game\resource\flash3" "src\game\resource\flash3"
+mklink /D /J "dota\game\resource\overviews" "src\game\resource\overviews"
 
 :: Hard link generated scripts
 mklink /H "dota\game\resource\addon_english.txt" "script_generator\BIN\addon_english_token.txt"
@@ -65,6 +65,7 @@ mklink /H "dota\game\panorama\localization\addon_schinese.txt" "script_generator
 
 mklink /H "dota\game\scripts\npc\npc_abilities_override.txt" "src\game\scripts\npc\npc_abilities_override.txt"
 mklink /H "dota\game\scripts\npc\npc_abilities_custom.txt" "src\game\scripts\npc\npc_abilities_custom.txt"
+:: mklink /H "dota\game\scripts\npc\npc_units_custom.txt" "src\game\scripts\npc\npc_units_custom.txt"
 mklink /H "dota\game\scripts\npc\npc_heroes_custom.txt" "script_generator\BIN\npc_heroes_custom.txt"
 
 :: Hard link materials folder
