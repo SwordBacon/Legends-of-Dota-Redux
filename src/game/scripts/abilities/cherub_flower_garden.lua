@@ -47,30 +47,6 @@ function PlantSetHealth( keys )
     end
 end
 
-function PlantSetHealthBase( keys )
-    local caster = keys.caster
-    local owner = caster
-    local target = keys.target
-    local ability = keys.ability
-    local abilityLevel = ability:GetLevel()
-    local health = ability:GetLevelSpecialValueFor("flower_health", abilityLevel - 1 )
-    local whiteDamage = ability:GetLevelSpecialValueFor("white_flower_damage", abilityLevel - 1 )
-    local redDamage = ability:GetLevelSpecialValueFor("red_flower_damage", abilityLevel - 1 )
-    
-    target:SetControllableByPlayer(owner:GetPlayerID(), true)
-    target:SetBaseMaxHealth(health)
-    if target:GetUnitName() == "white_flower" then
-        target:SetBaseDamageMin(whiteDamage - 5)
-        target:SetBaseDamageMax(whiteDamage + 5)
-    elseif target:GetUnitName() == "red_flower" then
-        target:SetBaseDamageMin(redDamage - 10)
-        target:SetBaseDamageMax(redDamage + 10)
-    end
-    if caster:HasScepter() then
-        ability:ApplyDataDrivenModifier(caster, target, "modifier_aghs_thorns", {})
-    end
-end
-
 function DamageCooldown( keys )
     local caster = keys.caster
     local ability = keys.ability
