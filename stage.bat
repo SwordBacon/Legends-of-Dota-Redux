@@ -65,7 +65,6 @@ mklink /H "dota\game\panorama\localization\addon_schinese.txt" "script_generator
 
 mklink /H "dota\game\scripts\npc\npc_abilities_override.txt" "src\game\scripts\npc\npc_abilities_override.txt"
 mklink /H "dota\game\scripts\npc\npc_abilities_custom.txt" "src\game\scripts\npc\npc_abilities_custom.txt"
-:: mklink /H "dota\game\scripts\npc\npc_units_custom.txt" "src\game\scripts\npc\npc_units_custom.txt"
 mklink /H "dota\game\scripts\npc\npc_heroes_custom.txt" "script_generator\BIN\npc_heroes_custom.txt"
 
 :: Hard link materials folder
