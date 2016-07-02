@@ -216,7 +216,7 @@
     "lodOptionGameSpeedRespawnTime60Second"         "60 Second Respawn"
 
     "acceptHosting"                                 "Ok, I understand"
-    "lodHostingMessage"                             "You are the host, you are required to select the options for this match. All options will be recoreded and you may be banned from selecting options if you continue to troll other players.\n\nLock the teams using the buttons at the top center of the screen, and lock the options by pressing the button in the bottom right hand corner."
+    "lodHostingMessage"                             "You are the host, you are required to select the options for this match. All options will be recorded and you may be banned from selecting options if you continue to troll other players.\n\nLock the teams using the buttons at the top center of the screen, and lock the options by pressing the button in the bottom right hand corner."
     "lodPickingMessage"                             "This is the drafting phase, you need to select a HERO and ABILITIES. Once you have selected both, press the lock build button to proceed. You may unlock your build at any stage, however, you will not be able to change your build while it is locked."
     "lodBanningMessage"                             "This is the banning phase. You can ban heroes and abilities to prevent players from selecting them in this match. Once you have finished banning, press the 'Finish Banning' button to continue."
     "lodHostingNoobMessage"                         "Please wait while the host configures the game settings."
@@ -277,7 +277,7 @@
     "hintEmpoweringHaste"                           "Empowering Haste and Thirst make for a lethal combination!"
     "hintInfestHacks"                               "Many spells such as Pudge's Rot and Witch Doctor's Voodoo Restoration won't damage you or cost mana when you infest another hero."
     "hintSuggestBuild"                              "Do you know a good build? Submit it and it may be added to the recommended builds sections."
-    "hintBreakPassives"                             "Silver Edge, Doom and Demonic Purge are the only ways to disable enemy passives - which can be very useful against passive-heavy heroes, such as Tanks."
+    "hintBreakPassives"                             "Silver Edge, Doom (with scepter), Demonic Purge (with scepter), and Global Break are the only ways to disable enemy passives - which can be very useful against passive-heavy heroes, such as Tanks."
     "hintInnateAbilities"                           "Night Stalker, Gyrocopter, Keeper of the Light and Meepo will benefit from Aghanim's Scepter Upgrade, irrespective of their chosen abilities."
     "hintReport"                                    "Please report Bugs and Troll Combos so that LoD can continue to improve! Use the Steam Workshop page or the GitHub page to make your reports."
 
@@ -927,25 +927,23 @@
     "DOTA_Tooltip_modifier_silencer_global_break_duration"                                      "DURATION:"
 	
 	// HERO CONCEPTS (from The Next Generation)
-	
 	//-------------------------------------------------------------------
     // Cherub, the Dancing Flower
     //-------------------------------------------------------------------
-    "DOTA_Tooltip_Ability_cherub_sleep_cloud"      "Sleep Cloud"  
+    "DOTA_Tooltip_Ability_cherub_sleep_cloud"                     "Sleep Cloud"  
     "DOTA_Tooltip_Ability_cherub_sleep_cloud_Description"    "Cherub emits a cloud of soothing aromas which put enemies to sleep if they are within the cloud's radius for 4 seconds. Enemies will wake up when the cloud duration ends or when they take a certain amount of damage."  
     "DOTA_Tooltip_Ability_cherub_sleep_cloud_Radius"      "RADIUS:"  
     "DOTA_Tooltip_Ability_cherub_sleep_cloud_Sleep_timer"    "TIME TO SLEEP:"  
     "DOTA_Tooltip_Ability_cherub_sleep_cloud_Duration"      "DURATION:"  
     "DOTA_Tooltip_Ability_cherub_sleep_cloud_Damage_to_wake"  "DAMAGE TO WAKE:"  
 
-
-    "DOTA_Tooltip_Ability_cherub_synthesis"        "Synthesis"  
-    "DOTA_Tooltip_Ability_cherub_synthesis_Description"    "While Toggled, converts Cherub's mana into health or health into mana, depending on the day/night cycle. During the day, converts her health into mana. During the night, converts her mana into health."  
+    "DOTA_Tooltip_Ability_cherub_synthesis"                      "Synthesis"  
+    "DOTA_Tooltip_Ability_cherub_synthesis_Description"      "While Toggled, converts Cherub's mana into health or health into mana, depending on the day/night cycle. During the day, converts her health into mana. During the night, converts her mana into health."  
     "DOTA_Tooltip_Ability_cherub_synthesis_Base_conversion_rate"  "BASE CONVERSION RATE:"  
     "DOTA_Tooltip_Ability_cherub_synthesis_mana_to_health"    "%MANA TO HEALTH (night):"  
     "DOTA_Tooltip_Ability_cherub_synthesis_health_to_mana"    "%HEALTH TO MANA (day):"
 
-    "DOTA_Tooltip_Ability_cherub_explosive_spore"      "Explosive Spore"
+    "DOTA_Tooltip_Ability_cherub_explosive_spore"                "Explosive Spore"
     "DOTA_Tooltip_Ability_cherub_explosive_spore_Description"  "Cherub creates a floating spore with flying movement. Spores will explode after 10 seconds or upon dying, dealing magical damage in an area of effect and lifestealing based on damage dealt."
     "DOTA_Tooltip_Ability_cherub_explosive_spore_Note0"      "Spores have 0 armor and 0%d%% magical resistance, and give 30 gold and 25 experience when killed. 
     "DOTA_Tooltip_Ability_cherub_explosive_spore_Delay"      "EXPLODE DELAY:"
@@ -956,7 +954,6 @@
     "DOTA_Tooltip_Ability_cherub_explosive_spore_Spore_health"    "SPORE HEALTH:"  
     "DOTA_Tooltip_Ability_cherub_explosive_spore_Spore_movespeed"  "SPORE MOVEMENT SPEED:"
 
-  
     "DOTA_Tooltip_Ability_cherub_flower_garden"      "Flower Garden"
     "DOTA_Tooltip_Ability_cherub_flower_garden_Description"    "Cherub fertilizes the ground, creating a garden plot temporarily. Costs 10%d%% of Cherub's Max health. Cherub can plant any one of six different flowers on her garden plots, which have increased stats based on the level of this ability.\nUpgradable by Aghanim's Scepter."
     "DOTA_Tooltip_Ability_cherub_flower_garden_Note0"      "Each flower has 0 armor and 0%d%% magic resistance."
@@ -965,7 +962,6 @@
     "DOTA_Tooltip_Ability_cherub_flower_garden_Scepter_flower_armor"  "SCEPTER THORNS ARMOR:"
     "DOTA_Tooltip_Ability_cherub_flower_garden_Scepter_damage_return"  "SCEPTER THORNS DAMAGE RETURN:"
     "DOTA_Tooltip_Ability_cherub_flower_garden_Aghanim_Description"    "Adds thorns to all flowers, increasing armor and returning damage when attacked."
-
 
     "DOTA_Tooltip_Ability_garden_white_flower"    "White Flower"
     "DOTA_Tooltip_Ability_garden_white_flower_Description"  "Plants a white flower which deals low attack damage from a high range. Maximum of 6 flowers. "
@@ -1062,14 +1058,14 @@
     "DOTA_Tooltip_Modifier_aghs_thorns"        "Thorns"
     "DOTA_Tooltip_Modifier_aghs_thorns_Description"      "Increased armor. Damages enemies on being attacked."
 
-
-    "explosive_spore"        "Explosive Spore"
-    "garden_plot"          "Garden Plot"
+    // Units
+    "explosive_spore"       "Explosive Spore"
+    "garden_plot"           "Garden Plot"
     "white_flower"          "White Flower"
-    "red_flower"          "Red Flower"
-    "pink_flower"          "Pink Blossom"
-    "blue_flower"          "Blue Blossom"
-    "yellow_flower"          "Yellow Daisy"
-    "purple_flower"          "Purple Lotus"
+    "red_flower"            "Red Flower"
+    "pink_flower"           "Pink Blossom"
+    "blue_flower"           "Blue Blossom"
+    "yellow_flower"         "Yellow Daisy"
+    "purple_flower"         "Purple Lotus"
 
 }
