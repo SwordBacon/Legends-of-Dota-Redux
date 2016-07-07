@@ -3,6 +3,9 @@ local toIgnore = util:getToggleIgnores()
 
 function RestoreMana(keys)
     local abName = keys.event_ability:GetClassname()
+    -- For custom datadriven abilities, use GetAbilityName() instead
+    if abName == "ability_datadriven" then abName = keys.event_ability:GetAbilityName() end
+
     if toIgnore[abName] then return true end
 
     -- Grab ability
