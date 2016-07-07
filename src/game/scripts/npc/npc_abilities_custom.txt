@@ -5016,4 +5016,13 @@
             }
         }
     }
+    "ursa_fury_swipes_lod"
+    {
+    }
+    "tusk_walrus_punch_lod"
+    {
+    }
+    "tusk_walrus_kick_lod"
+    {
+    }
 }
